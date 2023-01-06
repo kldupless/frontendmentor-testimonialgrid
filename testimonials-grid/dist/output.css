@@ -524,8 +524,8 @@ video {
   padding-top: 26px;
   padding-bottom: 26px;
   font-size: 13px;
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -634,16 +634,16 @@ article > q{
   background-color: rgb(25 33 46 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/bg-pattern-quotation\.svg\'\)\]{
-  background-image: url('/images/bg-pattern-quotation.svg');
+.bg-\[length\:102px\]{
+  background-size: 102px;
 }
 
-.bg-contain{
-  background-size: contain;
+.bg-\[position\:top_right_24px\]{
+  background-position: top right 24px;
 }
 
-.bg-right-top{
-  background-position: right top;
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .py-16{
@@ -656,8 +656,16 @@ article > q{
   padding-right: 1.5rem;
 }
 
+.font-sans{
+  font-family: "Barlow Semi Condensed", ui-sans-serif;
+}
+
 .text-sm{
   font-size: 11px;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .text-white-500{
@@ -746,6 +754,10 @@ article > q{
   .lg\:gap-x-8{
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .lg\:bg-\[position\:top_right_80px\]{
+    background-position: top right 80px;
   }
 
   .lg\:p-0{
