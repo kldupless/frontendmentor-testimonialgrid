@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./iPhone-X-XS-375x812.png)
+![](./Laptop-1-1440x900.png)
 
 ### Links
 
