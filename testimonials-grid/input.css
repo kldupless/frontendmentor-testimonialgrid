@@ -1,0 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:500,500italic,600,600italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
