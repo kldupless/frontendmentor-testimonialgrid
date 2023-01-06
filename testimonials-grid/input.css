@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .card {
+        @apply px-32 py-[26px] shadow-xl rounded-lg text-base grid grid-cols-1;
+    }
+
+    article > heading {
+        @apply text-lg font-semibold;
+    }
+}

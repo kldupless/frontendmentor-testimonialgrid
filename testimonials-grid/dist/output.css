@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -515,9 +515,108 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.card{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  border-radius: 0.5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 13px;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+article > heading{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-y-6{
+  row-gap: 1.5rem;
+}
+
 .bg-grayblue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(236 242 248 / var(--tw-bg-opacity));
+}
+
+.bg-midviolet-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 65 200 / var(--tw-bg-opacity));
+}
+
+.bg-darkblue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 85 106 / var(--tw-bg-opacity));
+}
+
+.bg-white-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blackblue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 33 46 / var(--tw-bg-opacity));
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[url\]{
+  background-color: url;
+}
+
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+
+.bg-\[url\(\'\/\'\)\]{
+  background-image: url('/');
+}
+
+.bg-\[url\(\'\/images\/\'\)\]{
+  background-image: url('/images/');
+}
+
+.bg-\[url\(\'\/images\/bg-pattern\'\)\]{
+  background-image: url('/images/bg-pattern');
+}
+
+.bg-\[url\(\'\/images\/bg-pattern-quotation\.svg\'\)\]{
+  background-image: url('/images/bg-pattern-quotation.svg');
+}
+
+.bg-\[url\(\'\.\/images\/bg-pattern-quotation\.svg\'\)\]{
+  background-image: url('./images/bg-pattern-quotation.svg');
+}
+
+.bg-\[url\(\'testimonials-grid\/images\/bg-pattern-quotation\.svg\'\)\]{
+  background-image: url('testimonials-grid/images/bg-pattern-quotation.svg');
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-right-top{
+  background-position: right top;
 }
 
 .px-6{
@@ -530,10 +629,63 @@ video {
   padding-bottom: 71px;
 }
 
+.text-sm{
+  font-size: 11px;
+}
+
+.text-white-500{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white-500\/50{
+  color: rgb(255 255 255 / 0.5);
+}
+
+.text-darkblue-500{
+  --tw-text-opacity: 1;
+  color: rgb(72 85 106 / var(--tw-text-opacity));
+}
+
+.text-darkblue-500\/50{
+  color: rgb(72 85 106 / 0.5);
+}
+
+.text-darkblue-500\/70{
+  color: rgb(72 85 106 / 0.7);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 1440px){
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:row-span-2{
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:row-span-1{
+    grid-row: span 1 / span 1;
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-2{
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-x-8{
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
 }
