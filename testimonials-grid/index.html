@@ -7,44 +7,59 @@
   <link rel="icon" sizes="32x32" type="image/png" href="/images/favicon.png"/>
   <title>Testimonial Grid | Frontend Mentor Challenge</title>
 </head>
-<body class="bg-grayblue-500 px-6 py-[71px]">
+<body class="bg-grayblue-500">
     <main>
-        <section id="testimonials" class="grid grid-cols-1 grid-rows-8 gap-y-6 lg:gap-x-8 lg:grid-cols-4 lg:grid-rows-2">
+        <section id="testimonials" class="mx-auto py-16 px-6 lg:p-0 lg:mt-40  lg:w-[1110px] lg:h-[572px] grid grid-cols-1 grid-rows-8 gap-y-6 lg:gap-x-8 lg:grid-cols-4 lg:grid-rows-2">
             <article id="testimonial-1" class="card bg-[url('/images/bg-pattern-quotation.svg')] bg-midviolet-500 bg-right-top bg-contain lg:col-span-2 lg:row-span-1  text-white-500">
-                <p>
-                    Daniel Clifford
-                </p>
-                <p class="text-white-500/50 text-sm">
-                    Verified Graduate
-                </p>
+                    <figure class="flex justify-start items-center h-7 gap-x-4">
+                        <img src="./images/image-daniel.jpg" alt="Headshot of Daniel Clifford" class="h-full rounded-full border-midviolet-200 border-2 box-content"/>
+                        <figcaption>
+                            <p>
+                                Daniel Clifford
+                            </p>
+                            <p class="text-white-500/50 text-sm">
+                                Verified Graduate
+                            </p>
+                        </figcaption>
+                    </figure>
                 <heading>
                     I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
                 </heading>
-                <q>
+                <q class="text-white-500/70">
                     I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup.
                 </q>
             </article>
             <article id="testimonial-2" class="card bg-darkblue-500 text-white-500">
-                <p>
-                    Jonathan Walters
-                </p>
-                <p class="text-white-500/50 text-sm">
-                    Verified Graduate
-                </p>
+                <figure class="flex justify-start items-center h-7 gap-x-4">
+                    <img src="./images/image-jonathan.jpg" alt="Headshot of Jonathan Walters" class="h-full rounded-full box-content"/>
+                    <figcaption>
+                        <p>
+                            Jonathan Walters
+                        </p>
+                        <p class="text-white-500/50 text-sm">
+                            Verified Graduate
+                        </p>
+                    </figcaption>
+                </figure>
                 <heading>
                     The team was very supportive and kept me motivated.
                 </heading>
-                <q>
+                <q class="text-white-500/70">
                     I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself.
                 </q>
             </article>
-            <article id="testimonial-3" class="card text-darkblue-500 lg:row-span-2 bg-white-500">
-                <p>
-                    Jeanette Harmon
-                </p>
-                <p class="text-darkblue-500/50 text-sm">
-                    Verified Graduate
-                </p>
+            <article id="testimonial-3" class="card text-darkblue-500 bg-white-500 lg:order-4">
+                <figure class="flex justify-start items-center h-7 gap-x-4">
+                    <img src="./images/image-jeanette.jpg" alt="Headshot of Jeanette Harmon" class="h-full rounded-full box-content"/>
+                    <figcaption>
+                        <p>
+                            Jeanette Harmon
+                        </p>
+                        <p class="text-darkblue-500/50 text-sm">
+                            Verified Graduate
+                        </p>
+                    </figcaption>
+                </figure>
                 <heading>
                     An overall wonderful and rewarding experience
                 </heading>
@@ -52,27 +67,37 @@
                     Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love.
                 </q>
             </article>
-            <article id="testimonial-4" class="card bg-blackblue-500 text-white-500">
-                <p>
-                    Patrick Abrams
-                </p>
-                <p class="text-white-500/50 text-sm">
-                    Verified Graduate
-                </p>
+            <article id="testimonial-4" class="card lg:col-span-2 lg:row-span-1 bg-blackblue-500 text-white-500 lg:order-5">
+                <figure class="flex justify-start items-center h-7 gap-x-4">
+                    <img src="./images/image-patrick.jpg" alt="Headshot of Patrick Abrams" class="h-full rounded-full border-midviolet-500 border-2 box-content"/>
+                    <figcaption>
+                        <p>
+                            Patrick Abrams
+                        </p>
+                        <p class="text-white-500/50 text-sm">
+                            Verified Graduate
+                        </p>
+                    </figcaption>
+                </figure>
                 <heading>
                     Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.
                 </heading>
-                <q>
+                <q class="text-white-500/70">
                     The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.
                 </q>
             </article>
-            <article id="testimonial-4" class="card text-darkblue-500 lg:col-span-2 bg-white-500">
-                <p>
-                    Kira Whittle
-                </p>
-                <p class="text-darkblue-500/50 text-sm">
-                    Verified Graduate
-                </p>
+            <article id="testimonial-4" class="card text-darkblue-500 lg:order-3 lg:col-span-1 lg:row-span-2 bg-white-500">
+                <figure class="flex justify-start items-center h-7 gap-x-4">
+                    <img src="./images/image-kira.jpg" alt="Headshot of Kira Whittle" class="h-full rounded-full box-content"/>
+                    <figcaption>
+                        <p>
+                            Kira Whittle
+                        </p>
+                        <p class="text-darkblue-500/50 text-sm">
+                            Verified Graduate
+                        </p>
+                    </figcaption>
+                </figure>
                 <heading>
                     Such a life-changing experience. Highly recommended!
                 </heading>

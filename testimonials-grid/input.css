@@ -5,10 +5,18 @@
 
 @layer components {
     .card {
-        @apply px-32 py-[26px] shadow-xl rounded-lg text-base grid grid-cols-1;
+        @apply px-8 py-[26px] shadow-2xl rounded-lg text-base grid grid-cols-1;
     }
 
     article > heading {
-        @apply text-lg font-semibold;
+        @apply text-lg font-semibold leading-6 py-4;
+    }
+
+    article > p {
+        @apply leading-[11px];
+    }
+
+    article > q {
+        @apply leading-[18px];
     }
 }
