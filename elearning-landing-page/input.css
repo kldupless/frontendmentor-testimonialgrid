@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,600,800);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply rounded-full text-white-500 px-6 py-2 text-2xs transition-opacity;
+        &:hover {
+            @apply opacity-50;
+        }
+    }
+
+    .gradient {
+        &_orange {
+            @apply bg-gradient-to-b from-orange-500 to-hotpink-500;
+        }
+        &_blue {
+            @apply bg-gradient-to-b from-blue-500 to-magenta-500;
+        }
+    }
+
+    .card {
+        @apply bg-white-500 py-7 px-8 rounded-xl shadow-xl;
+        p {
+            @apply font-medium text-2xs text-gray-500;
+        }
+        h3 {
+            @apply font-semibold text-xs;
+        }
+    }
+}
