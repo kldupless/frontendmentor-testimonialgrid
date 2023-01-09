@@ -7,53 +7,81 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
-<body class="font-sans text-black bg-gradient-to-b from-white-500 to-[#F0F1FF] h-full">
+<body class="font-sans text-gray-500 bg-gradient-to-b from-white-500 to-[#F0F1FF] h-full">
     <header class="flex justify-between items-center px-4 py-9">
         <img src="./images/logo-dark.svg" alt="Skilled logo"/>
         <button class="btn bg-black-500">Get Started</button>
     </header>
-    <main class="px-4">
-      <section>
-          <h1 class="text-2xl font-extrabold">Maximize skill, minimize budget</h1>
-          <p>
+    <main class="">
+      <section class="grid gap-y-6 px-4">
+          <h1 class="text-2xl text-black-500 font-extrabold leading-tight">Maximize skill, minimize budget</h1>
+          <p class="font-normal leading-7">
               Our modern courses across a range of in-demand skills will give you the
               knowledge you need to live the life you want.
           </p>
-          <button class="btn gradient_orange">Get Started</button>
+          <button class="btn gradient_orange px-[38px] py-4 place-self-start">Get Started</button>
       </section>
-      <section class="grid grid-rows-6 py-16 gap-y-10">
+      <figure>
+        <img src="images/image-hero-mobile.png" alt="A woman drinking coffee overlaid with cards displaying 29,000 members and 1,451 course hours"/>
+      </figure>
+      <section class="px-4 grid grid-cols-1 py-16 gap-y-10">
           <article class="card gradient_orange text-white-500">
-            <h2 class="font-extrabold">Check out our most popular courses!</h2>
+            <h2 class="font-extrabold text-base leading-8">Check out our most popular courses!</h2>
         </article>
           <article class="card">
+            <figure>
+                <img src="images/icon-animation.svg" alt="Person running"/>
+            </figure>
               <h3>Animation</h3>
-              Learn the latest animation techniques to create stunning motion
-              design and captivate your audience.
-              Get Started
+              <p>
+                  Learn the latest animation techniques to create stunning motion
+                  design and captivate your audience.
+              </p>
+              <button>Get Started</button>
           </article>
           <article class="card">
+            <figure>
+                <img src="images/icon-design.svg" aria-hidden="true"/>
+            </figure>
               <h3>Design</h3>
-              Create beautiful, usable interfaces to help shape the future of
-              how the web looks.
-              Get Started
+              <p>
+                  Create beautiful, usable interfaces to help shape the future of
+                  how the web looks.
+              </p>
+              <button>Get Started</button>
           </article>
           <article class="card">
+            <figure>
+                <img src="images/icon-photography.svg" aria-hidden="true"/>
+            </figure>
               <h3>Photography</h3>
-              Explore critical fundamentals like lighting, composition, and focus
-              to capture exceptional photos.
-              Get Started
+              <p>
+                  Explore critical fundamentals like lighting, composition, and focus
+                  to capture exceptional photos.
+              </p>
+              <button>Get Started</button>
           </article>
           <article class="card">
+            <figure>
+                <img src="images/icon-crypto.svg" aria-hidden="true"/>
+            </figure>
               <h3>Crypto</h3>
-              All you need to know to get started investing in crypto. Go from beginner
-              to advanced with this 54 hour course.
-              Get Started
+              <p>
+                  All you need to know to get started investing in crypto. Go from beginner
+                  to advanced with this 54 hour course.
+              </p>
+              <button>Get Started</button>
           </article>
           <article class="card">
+            <figure>
+                <img src="images/icon-business.svg" aria-hidden="true"/>
+            </figure>
               <h3>Business</h3>
-              A step-by-step playbook to help you start, scale, and sustain your business
-              without outside investment.
-              Get Started
+              <p>
+                  A step-by-step playbook to help you start, scale, and sustain your business
+                  without outside investment.
+              </p>
+              <button>Get Started</button>
           </article>
       </section>
   </main>

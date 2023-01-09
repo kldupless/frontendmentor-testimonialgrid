@@ -5,7 +5,7 @@
 
 @layer components {
     .btn {
-        @apply rounded-full text-white-500 px-6 py-2 text-2xs transition-opacity;
+        @apply rounded-full text-white-500 px-6 py-2 text-2xs font-bold transition-opacity;
         &:hover {
             @apply opacity-50;
         }
@@ -21,12 +21,19 @@
     }
 
     .card {
-        @apply bg-white-500 py-7 px-8 rounded-xl shadow-xl;
+        @apply bg-white-500 rounded-xl shadow-lg shadow-blue-800/10 px-7 pt-6 pb-8;
         p {
-            @apply font-medium text-2xs text-gray-500;
+            @apply font-medium text-2xs pt-4 pb-6 text-gray-500;
         }
         h3 {
-            @apply font-semibold text-xs;
+            @apply font-extrabold text-sm text-black-500;
+        }
+        button {
+            @apply text-xs font-bold text-pink-500 leading-7;
+        }
+
+        figure {
+            @apply -mt-12 pb-6;
         }
     }
 }
