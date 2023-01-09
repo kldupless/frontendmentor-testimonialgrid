@@ -8,29 +8,42 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body class="font-sans text-gray-500 bg-gradient-to-b from-white-500 to-[#F0F1FF] h-full">
-    <header class="flex justify-between items-center px-4 py-9">
+    <header class="flex justify-between items-center px-4 py-9 med:px-10 lg:px-40">
         <img src="./images/logo-dark.svg" alt="Skilled logo"/>
         <button class="btn bg-black-500">Get Started</button>
     </header>
     <main class="">
-      <section class="grid gap-y-6 px-4">
-          <h1 class="text-2xl text-black-500 font-extrabold leading-tight">Maximize skill, minimize budget</h1>
-          <p class="font-normal leading-7">
-              Our modern courses across a range of in-demand skills will give you the
-              knowledge you need to live the life you want.
-          </p>
-          <button class="btn gradient_orange px-[38px] py-4 place-self-start">Get Started</button>
+      <section class="grid gap-y-6 px-4 med:grid-cols-2 med:px-10 lg:px-40">
+          <article class="med:w-[398px] med:py-24 lg:w-[457px] lg:py-44">
+              <h1 class="text-2xl text-black-500 font-extrabold leading-tight lg:text-3xl">Maximize skill, minimize budget</h1>
+              <p class="font-normal leading-7 med:py-6 lg:text-xs lg:leading-7">
+                  Our modern courses across a range of in-demand skills will give you the
+                  knowledge you need to live the life you want.
+              </p>
+              <button class="btn gradient_orange px-[38px] py-4 place-self-start">Get Started</button>
+          </article>
+          <picture class="overflow-hidden med:-mt-32 med:w-[640px] lg:ml-36 lg:-mt-52 lg:w-[991px] h-auto">
+            <source 
+                srcset="./images/image-hero-desktop@2x.png"
+                media="(min-width: 1440px)"
+            />
+            <source 
+                srcset="./images/image-hero-tablet@2x.png"
+                media="(min-width: 768px)"
+            />
+            <img 
+                src="./images/image-hero-mobile@2x.png"
+                alt="A woman drinking coffee with an overlay showing 1,451 course hours and 29,000 members"
+            />
+          </picture>
       </section>
-      <figure>
-        <img src="images/image-hero-mobile.png" alt="A woman drinking coffee overlaid with cards displaying 29,000 members and 1,451 course hours"/>
-      </figure>
-      <section class="px-4 grid grid-cols-1 py-16 gap-y-10">
+      <section class="px-4 grid grid-cols-1 py-16 gap-y-10 med:px-10 med:py-20 med:grid-cols-2 med:gap-y-14 med:gap-x-3 lg:grid-cols-3 lg:py-36 lg:px-40 lg:gap-y-20 lg:gap-x-8">
           <article class="card gradient_orange text-white-500">
-            <h2 class="font-extrabold text-base leading-8">Check out our most popular courses!</h2>
+            <h2 class="font-extrabold text-base leading-8 lg:text-lg lg:leading-10">Check out our most popular courses!</h2>
         </article>
           <article class="card">
             <figure>
-                <img src="images/icon-animation.svg" alt="Person running"/>
+                <img src="images/icon-animation.svg" aria-hidden="true"/>
             </figure>
               <h3>Animation</h3>
               <p>
@@ -85,7 +98,7 @@
           </article>
       </section>
   </main>
-  <footer class="bg-black-500 flex justify-between items-center px-4 py-9">
+  <footer class="bg-black-500 flex justify-between items-center px-4 py-9 med:px-10 lg:px-40">
     <img src="./images/logo-light.svg" alt="Skilled logo"/>
     <button class="btn gradient_blue">Get Started</button>
 </footer>
