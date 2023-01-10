@@ -5,9 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-black text-white">
+    <main class="container mx-auto px-6 py-16 grid grid-cols-1 gap-y-5">
+        <header class="font-light bg-darkblue rounded-2xl">
+            <section class="flex flex-row items-center justify-center gap-x-3 py-6 bg-blue rounded-2xl">
+                <figure>
+                    <img src="images/image-jeremy.png" alt="Headshot of Jeremy Robson" class="rounded-full border-white border-2 h-16"/>
+                </figure>
+                <article>
+                    <h2 class="text-xs text-white/70">Report for</h2>
+                    <h1 class="text-base">Jeremy Robson</h1>
+                </article>
+            </section>
+            <nav class=" py-4 px-8">
+                <ul class="flex flex-row justify-between items-center text-lightblue/70" id="nav">
+                    <li id="1">Daily</li>
+                    <li id="2" class="text-white">Weekly</li>
+                    <li id="3">Monthly</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="time-report" class="grid grid-cols-1 gap-y-5">
+        </section>
+    </main>
+<script src="index.js"></script>
 </body>
 </html>
